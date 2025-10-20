@@ -1,7 +1,7 @@
 // import { handleValue } from './script-book.js'; // Calling location using API
 let loca=[] //Array to store location
 export async function loc() {
-    let a= await fetch("http://127.0.0.1:5501/states.html");
+    let a= await fetch("https://adityan-1200.github.io/states/");
     let response= await a.text();
     let div=document.createElement("div");
     div.innerHTML=response
