@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoBus</title>
+     <link rel="icon" type="image/x-icon" href="images/bus_logo.jpg">
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="">
+        <div class="navbar flex mt-2 pr-3 bg-green-200 items-center" >
+                 <div class="w-1/4"><img class="h-[65px] w-[95px] rounded-4xl" src="images/bus_logo.jpg" alt="bus_logo"></div>
+                 <div class="w-9/12 flex justify-end gap-4">
+                    <h3 class="font-mono text-2xl  mt-1.5 font-bold cursor-pointer">Home</h3>
+                    <h3 class="font-mono text-2xl mt-1.5 font-bold cursor-pointer" >Booking</h3>
+                    <h3 class="font-mono text-2xl mt-1.5 font-bold cursor-pointer">Aboutus</h3>
+                    <h3 class="font-mono text-2xl mt-1.5 font-bold cursor-pointer">Contact</h3>
+                    <button class="text-black cursor-pointer w-[200px] h-[50px] bg-gray-200 border rounded-r-xl rounded-l-xl font-mono hover:bg-green-300"><a href="login.html" target="_blank">Log In / Sign Up</a></button>
+                    
+                 </div>
+        </div>
+        <div  class="search flex justify-center">
+                   <div class=" cursor-pointer search_box h-[100px] w-[90%]  items-center bg-white  shadow-black shadow-sm rounded-l-[10px] rounded-r-[10px] mb-5">
+                        <div  class="  one-way flex  justify-around bg-white ">  
+                           <div class=" w-[255px] ml-2.5 mt-4  shadow-black shadow-sm rounded-l-[10px] rounded-r-[10px]">
+                                <h6 class=" mt-1 ml-[15px] font-mono text-l">From</h6>
+                                <select  class=" thir text-center font-mono text-xl font-bold appearance-none border-none outline-none  ml-5">  
+                                <option>
+                  
+                                </option>
+                                </select>
+                            </div>
+                         
+                            <div class="to w-[255px] ml-2.5 mt-4 shadow-black shadow-sm rounded-l-[10px] rounded-r-[10px]">
+                                <h6 class="  mt-1 ml-[15px] font-mono text-l">To</h6>
+                            <select  class=" chenn text-center font-mono text-xl font-bold appearance-none border-none outline-none ml-6">  
+                                <option>
+
+                                </option>
+                                </select>
+                                
+                            </div>
+                            <div class="date w-[255px] ml-2.5 mt-4 shadow-black shadow-sm rounded-l-[10px] rounded-r-[10px]">
+                                <h6 class="  mt-1 ml-[15px] font-mono text-l">Departure Date</h6>
+                                <div class="bg-white ml-[30px]  rounded-2xl   w-50">
+                                <input 
+                                 type="date" 
+                                    id="date" 
+                                 class="w-full font-mono text-xl font-bold border-none border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div id="pass" class="passenger w-[255px] ml-2.5 mt-4 shadow-black shadow-sm rounded-l-[10px] rounded-r-[10px]">
+                                <h6 class="  mt-1 ml-[15px] font-mono text-l">Passenger</h6>
+                                <div class=" flex justify-center gap-3">
+                                    <img class="plus" class="h-[25px] w-[25px] mr-3.5" src="images/minus-sign.png" alt="minus">
+                                    <h3 class="count" class="text-center font-mono text-lg">1 </h3>
+                                    <h3 class="text-center font-mono text-lg"> Adult</h3>
+                                    <img class="minus" class="h-[25px] w-[25px] ml-3.5" src="images/plus-sign.png" alt="plus">
+                                    </div>
+                            </div>
+            </div>
+            <div class="flex justify-center">
+                <h1 class="font-bold font-mono text-2xl mt-8 mb-4">Select seat</h1>
+            </div>
+            <div class=" border-solid border-2 rounded-r-[10px] rounded-l-[10px]  mb-4 p-1">
+                <div class="">
+                    <div class="seat_1 flex gap-[10px] mb-[15px] ">
+                            
+                    </div>
+                    <div class="seat_2 flex gap-[10px] mb-[15px]">
+                            
+                    </div>
+                    <div class="seat_3 flex gap-[10px] mb-[15px]">
+                            
+                    </div>
+                </div>
+            </div>
+            <div class=" h-[150px]  p-4 rounded-r-[10px] rounded-l-[10px] shadow-black shadow-lg">
+                <div class=" ">
+                    <div class="">
+                    <h3 class="font-mono font-bold text-2xl">Selected seats :-</h3>
+                    </div>
+                    <div class=" flex">
+                    <img class="h-[100px] w-[100px]" src="images/selected-seat.png" alt="seat">
+                    <div class="sel flex ">
+                    <h3 class="font-mono font-bold text-3xl mt-[30px]"></h3>
+                    </div>
+                    <button class="font-mono font-bold text-2xl absolute left-275 mt-[5px] h-[65px] w-[200px] border-2 border-solid  rounded-r-[10px] rounded-l-[10px] bg-green-400 hover:bg-green-600"><a href="payment.html">Go to Payment</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script-seat.js" type="module"></script>
+</body>
+</html>

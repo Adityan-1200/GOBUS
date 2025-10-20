@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+  <div class="bg-white rounded-2xl shadow-xl w-[380px] overflow-hidden border-t-4 border-red-500">
+    
+    <div class="bg-red-500 text-white text-center py-3">
+      <h2 class="text-2xl font-bold tracking-wide">GoBus</h2>
+      <p class="text-sm opacity-90">Bus Ticket</p>
+    </div>
+
+    
+    <div class="p-5 text-gray-700">
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <p class="text-sm text-gray-500">From</p>
+          <h3 id="from" class="text-lg font-bold"></h3>
+        </div>
+        <div class="text-red-500 text-2xl font-bold">→</div>
+        <div class="text-right">
+          <p class="text-sm text-gray-500">To</p>
+          <h3 id="to" class="text-lg font-bold"></h3>
+        </div>
+      </div>
+
+      <div class="border-t border-dashed my-3"></div>
+
+      <div class="grid grid-cols-2 gap-y-2 text-sm">
+        <p class="font-semibold text-gray-600">Passenger:</p>
+        <p id="pass">Adityan</p>
+        <p class="font-semibold text-gray-600">Mail-ID:</p>
+        <p id="mail"></p>
+
+        <p class="font-semibold text-gray-600">Date:</p>
+        <p id="date"></p>
+
+        <p class="font-semibold text-gray-600">Departure:</p>
+        <p id="depp">09:30 PM</p>
+
+        <p class="font-semibold text-gray-600">Seat No:</p>
+        <p id="seat"></p>
+
+
+        <p class="font-semibold text-gray-600">Fare:</p>
+        <p id="fare">₹</p>
+      </div>
+
+      <div class="border-t border-dashed my-3"></div>
+
+      <div class="text-center text-xs text-gray-500">
+        <p>Booking ID: RBX54231</p>
+        <p class="mt-1">Thank you for choosing GoBus!</p>
+      </div>
+    </div>
+
+    
+    <div class="bg-gray-50 text-center py-2 border-t text-xs text-gray-500">
+      <p>www.gobus.in | help@gobus.in</p>
+    </div>
+  </div>
+<script src="ticket.js">
+
+</script>
+</body>
+</html>
